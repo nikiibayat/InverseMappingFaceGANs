@@ -12,7 +12,7 @@ The model recieves 512 size random vectors sampled from normal distribution and 
 
 ---
 In this work, we first try to map face images into latent-space using a ResNet18 architecture. The proposed framework is represented in below figure.
-![](https://gitlab.com/nickybayat/inverse_mapping_gans/-/raw/master/Generated_ResNet.png)
+![](https://github.com/nikiibayat/Inverse_Mapping_Face_GANs/blob/main/figures/Generated_ResNet.png?raw=true)
 
 <div align="center">
 The proposed framework to mapping generated faces.
@@ -40,7 +40,7 @@ Then run ```python resnet_test.py``` to save reconstructed faces in results fold
 
 ---
 
-![comparison](https://gitlab.com/nickybayat/inverse_mapping_gans/-/raw/master/generated_pixel_perceptual.png)
+![comparison](https://github.com/nikiibayat/Inverse_Mapping_Face_GANs/blob/main/figures/generated_pixel_perceptual.png?raw=true)
 
 *The comparison of our method with optimization-based method (with and without stochastic clipping) is depicted in below figure. Original generated faces are presented in column(a). Column (b) is the generated faces of recovered latent vectors by (a) using gradient-descent method with 200 iterations. Column (c) applies stochastic clipping while updating gradient descent. Column (d) is our method, which utilizes our trained ResNet to map generated images to their corresponding latent vectors. Column (e) is our ResNet trained using both pixel and perceptual loss.*
 
@@ -61,11 +61,11 @@ Please make sure to change the model in resnet_test.py to the real faces model y
 
 After downloading the model (the saved checkpoint) as well as AR dataset, the you can run ```python resnet_test.py``` to achieve below results.
 
-![style](https://gitlab.com/nickybayat/inverse_mapping_gans/-/raw/master/Style_transfer_AR.png)
+![style](https://github.com/nikiibayat/Inverse_Mapping_Face_GANs/blob/main/figures/Style_transfer_AR.png?raw=true)
 
 *The results for mapping natural faces to latent-space vectors that contain same style and facial features. The faces ineach row represent how recovered latent vectors understand the gender, hair style and emotions of the target image respectively.*
 
-![pose](https://gitlab.com/nickybayat/inverse_mapping_gans/-/raw/master/pose.png)
+![pose](https://github.com/nikiibayat/Inverse_Mapping_Face_GANs/blob/main/figures/pose.png?raw=true)
 
 *Recovered latent vectors preserve the pose of the target face.*
 
